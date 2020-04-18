@@ -1,0 +1,20 @@
+This repository contains the source code of Daptrace, which is presented by
+Middleware'19 Industrial track[1].
+
+
+Usage
+=====
+
+1. Clone it on your system running the Linux kernel v5.0 or later
+2. Ensure that the debugfs is mounted at /sys/kernel/debug
+3. Go into the cloned repository, and execute 'sudo ./daptrace.py -h'
+
+'daptrace.py' is the wrapper script for record of the data access pattern.  For
+visualization of the recorded access pattern, please tak a look into the
+'scripts/' directory.
+
+
+[1] SeongJae Park, Yunjae Lee, Heon Y. Yeom, "Profiling Dynamic Data Access
+    Patterns with Controlled Overhead and Quality." In 20th ACM/IFIP
+    International Middleware Conference Industry, December 2019.
+    https://dl.acm.org/doi/10.1145/3366626.3368125
