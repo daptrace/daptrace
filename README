@@ -10,11 +10,28 @@ Usage
 3. Go into the cloned repository, and execute 'sudo ./daptrace.py -h'
 
 'daptrace.py' is the wrapper script for record of the data access pattern.  For
-visualization of the recorded access pattern, please tak a look into the
+visualization of the recorded access pattern, please take a look into the
 'scripts/' directory.
 
+
+A Successor of Daptrace
+=======================
+
+A new open-source project based on Daptrace, called DAMON, is ongoing.  The
+goal is to fulfill production quality and more features.  One main additional
+feature of DAMON is automation of monitoring based memory management
+optimization, namely DAMON-based Operation Schemes (DAMOS).  The source code is
+periodically released to LKML.  It has also introduced by an LWN article[2].
+The latest version (as of 2020-04-18) of DAMON source code is available at
+https://github.com/sjp38/linux/releases/tag/damos/rfc/v6
+
+
+References
+==========
 
 [1] SeongJae Park, Yunjae Lee, Heon Y. Yeom, "Profiling Dynamic Data Access
     Patterns with Controlled Overhead and Quality." In 20th ACM/IFIP
     International Middleware Conference Industry, December 2019.
     https://dl.acm.org/doi/10.1145/3366626.3368125
+[2] Jonathan Corbet, "Memory-management optimization with DAMON." In Linux
+    Weekly News, February 2020. https://lwn.net/Articles/812707/
